@@ -17,12 +17,12 @@ The main advantages of using ABS system in vehicle is that it provides better co
 Antilock Breaking System (ABS) is used in advanced automobiles to prevent slip and locking of wheel after brakes applied. It is automobile safety system, the controller is provided to control the necessary torque to maintain optimum slip ration. The slip ration denote in terms of vehicle speed and wheel rotation. It's an automated system that run on principles of threshold braking and cadence braking which were practiced by skillful drivers with previous generation braking system. It response time is very faster so that makes easy steering for the driver. ABS generally offer advanced vehicle control and minimize the stopping distance in slippery and dry surface, conversely on loose surface like gravel or snow covered pavement, ABS can significantly increase braking distance, although still improving vehicle control.
 
 
-## Features
+## Features/Functions
 1.To reduce stopping distance
 2.stability
 3.steerablity
 
-## Image
+## Images
 
 ## Block Diagram
 ![image](https://user-images.githubusercontent.com/46984887/159897122-78ee81bc-521a-4423-b258-e79442be7c46.png)
@@ -38,14 +38,17 @@ Antilock Breaking System (ABS) is used in advanced automobiles to prevent slip a
 
 |ID|High Level Requirements|
 |--|-----------------------|
-|HL01|controller (ECU-Electronic Control Unit) reads the signal from each of the speed sensors of the wheel|
-|HL02|
+|HLR1|When Driver press the Brake Pedal, Piston presses the Brake Fluid & Then ECU Sends signal to Solenoid Valve & Pump|
+|HLR2|When Wheel stops due to Brake, Speed Sensor sends signal to ECU. ECU Sends signal to Pump & Solenoid Valve to Stop Brake Fluid flow & Release Pressure on Wheel (By Return the Brake Fluid through the Return line)|
+|HLR3|Again Speed Sensor sends Signal to the ECU about wheel Speed. Again ECU Sends signal to Solenoid Valve & Pump to Start Flow|
 
 ## Low Level Requirements
 
-|ID|Low Level Requirement for HL01|ID|Low level Requirement for HL02|
-|---|-----------------------------|--|-------------------------------|
-|LL01|
+|ID|Low Level Requirement for HL01|ID|Low level Requirement for HL02|ID|Low Level Requirements for HL03|
+|---|-----------------------------|--|------------------------------|---|------------------------------|
+|LLR1|Hence Brake Fluid flows from –   MASTER CYLINDER -> PUMP -> ACCUMULATOR -> SOLENOID VALVE -> WHEEL DRUM|LLR2|WHEEL DRUM-> SOLENOID VALVE -> ACCUMULATOR   Therefore Wheel again starts to Rotate|LL03|Hence Again Brake Fluid flows from –   PUMP -> ACCUMULATOR -> SOLENOID VALVE -> WHEEL DRUM
+
+This Steps occurs Rapidly till Vehicle Speed Reduces or Vehicle Stops Without Skidding|
 
 
 
@@ -83,10 +86,13 @@ Pump is used to restore the pressure to the hydraulic brakes after the valve rel
 ## Controller
 The controller used in the ABS system is of ECU type. Its main function is to receives information from each individual wheel speed sensors and if a wheel loses its traction with the ground, a signal is sent to the controller, the controller than limit the brake force (EBD) and activate the ABS modulator. The activated ABS modulator actuates the braking valves on and off and varies the pressure to the brakes.
 
+## Speed sensors: Detect how fast the wheels rotate
+## Valves: Located in the brake line, these stop and release pressure on the brakes
+## Pump: Applies pressure to the calipers, or brake drums, and are filled with hydraulic fluid
+# Controller: Takes data from the sensors and controls when to pump the brakes
 
 
-
-## king of Anti-lock Braking System (ABS)
+##  Anti-lock Braking System (ABS)
 
 The controller (ECU-Electronic Control Unit) reads the signal from each of the speed sensors of the wheel.
 As the brakes are suddenly applied by the driver, this makes the wheel to decelerate at faster rate and may cause the wheel to Lock.
@@ -100,7 +106,7 @@ For Better Explanation about Anti-lock Braking System Watch the Video Given Belo
 
  
 
-## ABS System peration
+## ABS System Operation
 
 
 When the ABS in operation, it can be felt by the driver through pulsation in the brake pedal; this happens because of the rapid opening and closing of the valves. The pulsing action of the pedal tells the driver that ABS system is in operation. Any fault in the ABS system is indicated on the instrument panel of the vehicle and it will work when the fault is completely removed.
@@ -114,6 +120,16 @@ It reduces the chance of collision by 30 %.
 ## Disadvantages
 A vehicle equipped with ABS (Anti-lock Braking System) is costlier as compared with a vehicle without ABS.
 |HL01|
+
+## SWOT Analysis
+
+## STRENGTH
+ ABC helps to Stop Constant locking of vehicle wheel, Hence Results in Vehicle stops without the skidding of wheel.
+## WEAKNESS
+High cost 
+## OPPTURNITY
+High Resale Price
+## THREAT
 
 
 

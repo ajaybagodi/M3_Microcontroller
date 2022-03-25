@@ -17,11 +17,41 @@ The main advantages of using ABS system in vehicle is that it provides better co
 Antilock Breaking System (ABS) is used in advanced automobiles to prevent slip and locking of wheel after brakes applied. It is automobile safety system, the controller is provided to control the necessary torque to maintain optimum slip ration. The slip ration denote in terms of vehicle speed and wheel rotation. It's an automated system that run on principles of threshold braking and cadence braking which were practiced by skillful drivers with previous generation braking system. It response time is very faster so that makes easy steering for the driver. ABS generally offer advanced vehicle control and minimize the stopping distance in slippery and dry surface, conversely on loose surface like gravel or snow covered pavement, ABS can significantly increase braking distance, although still improving vehicle control.
 
 
-## Features/Functions
+## Features
 1.To reduce stopping distance
 2.stability
 3.steerablity
 
+
+## Objectives
+## To reduce stopping distance
+1. The road surface type and conditions can be inferred from the vehicle's
+braking pressure, wheel slip measurements, and deceleration rate
+comparisons.
+2. The wheel slip is regulated so that the road adhesion coefficient is
+maximized. By keeping all of the wheels of a vehicle near the maximum
+friction coefficient, an antilock system can attain maximum fictional
+force
+3. In turn, this strategy leads to the minimization of the vehicle stopping
+distance.
+
+## Stability
+1. A locked-up wheel generates a reduced braking force, smaller than the peak
+value of the available adhesion between tires and road. A locked-up wheel
+will also lose its capability to sustain any lateral force. This may result in the
+loss of vehicle stability.
+2. The basic purpose of a conventional ABS system is thus to prevent any
+wheel from locking and to keep the longitudinal slip in an operational range
+by cycling the braking pressure.
+ANTILOCK BRAKING SYSTEM 6
+## Steerability
+1. Good peak frictional force control is necessary in order to achieve
+satisfactory lateral forces and, therefore, satisfactory steer-ability. 
+2. If an obstacle appears without warning, emergency braking may not be
+sufficient. When the wheels are locked, car no longer respond to the driver’s
+steering intention.
+3. With ABS car remains steerable even during emergency braking, and thus the 
+obstacle can be safely avoided
 ## Images
 
 ## Block Diagram
@@ -50,15 +80,6 @@ Antilock Breaking System (ABS) is used in advanced automobiles to prevent slip a
 
 This Steps occurs Rapidly till Vehicle Speed Reduces or Vehicle Stops Without Skidding|
 
-
-
-
-
-
-
-
-
-
 ## Components of ABS system
 
 It has four main components
@@ -67,29 +88,14 @@ It has four main components
 3. Pump
 4. Controller
 
-## sped Sensors
-It is used to calculate the acceleration and deceleration of the wheel. It consists of a toothed wheel and an electromagnetic coil or a magnet and a Hall Effect sensor to generate signal. When the wheel or differentials of the vehicle rotates, it induces magnetic field around the sensor. The fluctuation in this magnetic field generates voltage in the sensor. This voltage generated sends signals to the controller. With the help of the voltage the controller reads the acceleration and deceleration of the wheel.
- 
-
-##  Valves
-Each brake line which is controlled by the ABS has a valve. In some of the systems, the valve works on three positions.
-In position one, the valve remains open; and pressure from the master cylinder passed through it to the brake.
-In position two, the valve blocks the line and separates the brake from the master cylinder. And this prevents the further rise of the pressure to the brakes. Valve operates in second position when the driver applies the brake harder.
-In position three, some of the pressure from the brake is released by the valve.
-The clogging of the valve is the major problem in ABS. When the valve is clogged, it becomes difficult for the valve to open, close or change position. When the valve is in inoperable condition, it prevents the system form modulating the valves and controlling pressure to the brakes.
- 
-
-## Pump
-Pump is used to restore the pressure to the hydraulic brakes after the valve releases the pressure. When the controller detects wheel slip, it sends signals to release the valve. After the valve releases the pressure supplied from the driver, it restore a desired amount of pressure to the braking system. The controller modulates (adjust) the status of the pump so as to provide desired amount of pressure and reduce slipping of the wheel.
- 
-
-## Controller
-The controller used in the ABS system is of ECU type. Its main function is to receives information from each individual wheel speed sensors and if a wheel loses its traction with the ground, a signal is sent to the controller, the controller than limit the brake force (EBD) and activate the ABS modulator. The activated ABS modulator actuates the braking valves on and off and varies the pressure to the brakes.
-
-## Speed sensors: Detect how fast the wheels rotate
-## Valves: Located in the brake line, these stop and release pressure on the brakes
-## Pump: Applies pressure to the calipers, or brake drums, and are filled with hydraulic fluid
-# Controller: Takes data from the sensors and controls when to pump the brakes
+## Speed sensors:
+Detect how fast the wheels rotate
+## Valves: 
+Located in the brake line, these stop and release pressure on the brakes
+## Pump: 
+Applies pressure to the calipers, or brake drums, and are filled with hydraulic fluid
+# Controller: 
+Takes data from the sensors and controls when to pump the brakes
 
 
 ##  Anti-lock Braking System (ABS)
@@ -102,24 +108,16 @@ This process of applying brakes and releasing it happens 15 times in a second wh
 For Better Explanation about Anti-lock Braking System Watch the Video Given Below:
 
  
-
-
- 
-
 ## ABS System Operation
 
+conventionally, the work of the anti-lock braking system is divided into 3 stages:
+
+## Wheel lock - the ECU sends a signal to activate the system;
+## Actuation of the actuator - the hydraulic block changes the pressure in the system, which leads to the unlocking of the wheels;
+## Deactivation of the system when wheel rotation is restored.
+It is worth considering that the whole process is controlled by algorithms embedded in the control unit software. The reliability of the system lies in the fact that it is triggered even before the wheels lose traction. An analogue that works only on the basis of wheel rotation data would have a simpler design and principle of operation. However, such a system would work no better than the first designs of Gabriel Voisin.
 
 When the ABS in operation, it can be felt by the driver through pulsation in the brake pedal; this happens because of the rapid opening and closing of the valves. The pulsing action of the pedal tells the driver that ABS system is in operation. Any fault in the ABS system is indicated on the instrument panel of the vehicle and it will work when the fault is completely removed.
-
-## advantages
-It prevents the locking of the wheel and thus eliminates the chance of skidding.
-The skidding of the vehicle is completely removed, which results in excellent control during braking?
-A better steering control is obtained with the ABS system.
-It reduces the chance of collision by 30 %.
-
-## Disadvantages
-A vehicle equipped with ABS (Anti-lock Braking System) is costlier as compared with a vehicle without ABS.
-|HL01|
 
 ## SWOT Analysis
 
@@ -130,9 +128,33 @@ High cost
 ## OPPTURNITY
 High Resale Price
 ## THREAT
+One of the threat of ABS is it's "Delicate" It's easy to cause a problem in an ABS by messing around with the brakes. Problems include disorientation of the ABS, where a compensating brake sensor causes the vehicle to shudder, make loud noise or generally brake worse.
 
+## 4W's && 1'H
 
+## WHO
+Any person who can drive vehicle can operate it easily
+## WHAT
+On a hard brake wheels not get locked ,instead wheels get slows down and stops at certain distance
+## WHEN
+To stop vehicle at quick situations friction between the roads and tyre surface is increased
+## WHERE
+It is found in alomost all modern vehicles & widely used in Automobiles
+## WHY
+to avoid skidding while braking. 
+## HOW
+Developed using the sensors & Electronic Control Unit implemented on a hardware
 
+## Advantages & Disadvantages
+
+## advantages
+It prevents the locking of the wheel and thus eliminates the chance of skidding.
+The skidding of the vehicle is completely removed, which results in excellent control during braking?
+A better steering control is obtained with the ABS system.
+It reduces the chance of collision by 30 %.
+
+## Disadvantages
+A vehicle equipped with ABS (Anti-lock Braking System) is costlier as compared with a vehicle without ABS.
 
 
 
